@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Resets */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+header,
+footer,
+img,
+a,
+a:hover,
+a:visited {
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #1a1a1a;
+  border-width: 0;
+}
+
+.clear {
+  float: none;
+  width: 100%;
+  height: 1px;
+}
+
+.wrapper .header {
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 -25px 11px 20px #000;
+  padding: 10px 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .header .logo {
+}
+
+.wrapper .header .logo img {
+  width: 70px;
+}
+
+.wrapper .header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.wrapper .header .menu li {
+  padding: 0 10px;
+}
+
+.wrapper .header .menu li a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.loggedIn .wrapper .header .menu .loggedOut {
+  display: none;
+}
+
+.wrapper .header .menu .loggedIn {
+  display: none;
+}
+
+.loggedIn .wrapper .header .menu .loggedIn {
+  display: block;
+}
+.wrapper .header .menu li a:hover {
+  opacity: 0.5;
+}
+
+.wrapper .content {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.wrapper .content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+.wrapper .content h2 {
+  font-size: 26px;
+  padding: 5px 0;
+}
+.wrapper .content .blurb {
+  padding: 16px 8px;
+  background-color: lightgray;
+  margin: 15px auto;
+  width: 60%;
+  font-size: 16px;
+  line-height: 1.4;
+  word-spacing: 1.4px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+.wrapper .content .ctaWrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrapper .content .ctaWrapper .cta {
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 0px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  width: 200px;
+  text-transform: uppercase;
+  border: none;
+}
+.wrapper .content .ctaWrapper .red {
+  background-color: red;
+}
+.wrapper .content .ctaWrapper .green {
+  background-color: green;
+}
+
+.wrapper .content .ctaWrapper .blue {
+  background-color: blue;
+}
+
+.wrapper .content .ctaWrapper .cta:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.wrapper .footer {
+  background: #333;
+  text-align: center;
+}
+
+.wrapper .footer .copyright {
+  padding: 50px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.formWrapper {
+  margin: 20px auto;
+  width: 50%;
+}
+.formWrapper h1 {
+  font-size: 28px !important;
+  font-weight: 500;
+  padding: 5px 0 !important;
+}
+.formWrapper h2 {
+  font-size: 20px !important;
+  font-weight: 500;
+  padding: 5px 0 !important;
+}
+
+.formWrapper h3 {
+  font-size: 16px !important;
+  font-weight: 500;
+  padding: 5px 0 !important;
+}
+
+.formSuccess {
+  display: none;
+  background: green;
+  color: white;
+  padding: 10px 5px;
+  margin: 15px 0;
+}
+.formError {
+  display: none;
+  background: red;
+  color: white;
+  padding: 10px 5px;
+  margin: 15px 0;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+}
+
+.inputWrapper .inputLabel {
+  font-size: 16px;
+  opacity: 0.8;
+  padding: 5px;
+  align-self: flex-start;
+}
+.inputWrapper input[type="checkbox"] {
+  align-self: flex-start;
+}
+.inputWrapper button {
+  align-self: center;
+}
